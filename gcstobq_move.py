@@ -15,6 +15,8 @@ from apache_beam.options.pipeline_options import SetupOptions
 from apache_beam.io.gcp.internal.clients import bigquery
 
 '''
+python gcstobq_template --input gs://gcsbucket_dataflow_second/* --runner=DataflowRunner --project=inspired-alcove-338014 --staging_location=gs://gcsbucket_dataflow/staging --template_location=gs://dataflow_template_demo01/gcsbq --temp_location=gs://gcsbucket_dataflow/temp2/ --region=us-central1 
+
 class AwsLogParser:
 
     def __init__(self):
